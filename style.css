@@ -46,10 +46,33 @@ body {
 
 }
 
+.list-task{
+    width: 100%;
+    list-style: none ; /* serve para tirar os pontos da lista*/
+    margin-top: 30px;
+}
 
+.tasks{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.tasks:hover img{
+    opacity: 1;
+    
+}
 
 img {
     height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .container {
